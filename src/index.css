@@ -1,0 +1,81 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Satoshi", "Cabinet Grotesk", "Inter", system-ui, sans-serif;
+  --font-mono: "Fira Code", monospace;
+  --color-brand-50: #f8fafc;
+  --color-brand-100: #f1f5f9;
+  --color-brand-500: #64748b;
+  --color-brand-600: #475569;
+  --color-brand-900: #0f172a;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-[#f9fafb] text-slate-900 antialiased selection:bg-slate-900 selection:text-white;
+    font-feature-settings: "cv11", "ss01", "ss03", "cv02", "cv03", "cv04", "cv09", "cv10";
+  }
+}
+
+/* Atmospheric Background Layers (Neutralized) */
+.vibe-blobs {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.blob-1 {
+  position: absolute;
+  top: -10%;
+  right: -5%;
+  width: 50vw;
+  height: 50vw;
+  background: radial-gradient(circle, rgba(148, 163, 184, 0.05) 0%, transparent 70%);
+  animation: blob-float 20s infinite alternate;
+}
+
+.blob-2 {
+  position: absolute;
+  bottom: -10%;
+  left: -5%;
+  width: 60vw;
+  height: 60vw;
+  background: radial-gradient(circle, rgba(148, 163, 184, 0.05) 0%, transparent 70%);
+  animation: blob-float 25s infinite alternate-reverse;
+}
+
+@keyframes blob-float {
+  0% { transform: translate(0, 0) scale(1); }
+  100% { transform: translate(50px, 30px) scale(1.1); }
+}
+
+@layer utilities {
+  .taste-shadow {
+    box-shadow: 0 20px 40px -15px rgba(0,0,0,0.05);
+  }
+  .taste-shadow-hover {
+    box-shadow: 0 30px 60px -15px rgba(0,0,0,0.08);
+  }
+  .taste-border {
+    @apply border border-slate-200/60;
+  }
+  .taste-card {
+    @apply bg-white border border-slate-200/60 rounded-[2.5rem] p-8 sm:p-10 transition-shadow duration-500;
+    box-shadow: 0 20px 40px -15px rgba(0,0,0,0.05);
+  }
+  .taste-card:hover {
+    box-shadow: 0 30px 60px -15px rgba(0,0,0,0.08);
+  }
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
