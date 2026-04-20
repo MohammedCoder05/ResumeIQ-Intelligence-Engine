@@ -8,6 +8,10 @@ ResumeIQ is a premium, monochrome career intelligence platform designed to bridg
 
 🔗 **[ResumeIQ Intelligence Engine — Live](https://resumeiq-intelligence-engine-app.netlify.app/)**
 
+🎥 Demo Video
+
+👉 https://drive.google.com/file/d/1GBhV7Xi4I9YD50o0mbFbhBgKLh47y_tK/view
+
 ## 📸 Screenshots
 
 ### Login Portal
