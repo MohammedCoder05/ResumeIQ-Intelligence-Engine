@@ -4,7 +4,20 @@
 
 ResumeIQ is a premium, monochrome career intelligence platform designed to bridge the gap between static resumes and dynamic job requirements. By leveraging neural synthesis and heuristic-based scoring, ResumeIQ provides candidates with a data-driven path to recruitment success.
 
-![ResumeIQ Dashboard](/Users/machintosh/.gemini/antigravity/brain/20a427dd-174f-4636-b1f9-608d4111eecb/dashboard_final_check_1776593096187.png)
+## 🌐 Live Demo
+
+🔗 **[ResumeIQ Intelligence Engine — Live](https://resumeiq-intelligence-engine-app.netlify.app/)**
+
+## 📸 Screenshots
+
+### Login Portal
+![Login Portal](./screenshots/login.png)
+
+### Dashboard
+![Dashboard](./screenshots/dashboard.png)
+
+### Analysis Engine
+![Analysis Engine](./screenshots/analyze.png)
 
 ## ⚡ Core Intelligence Modules
 
